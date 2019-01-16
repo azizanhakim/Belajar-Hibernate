@@ -46,7 +46,7 @@ public class TestBukuDao extends TestCase {
         Buku pemrograman = new Buku(
                 "978-979-18346-3-6",
                 "Pemrograman Lanjut",
-                "Azizan Hakim",
+                "Ujah Elsa",
                 2019,
                 "Gramedia",
                 listKategoryBuku,
