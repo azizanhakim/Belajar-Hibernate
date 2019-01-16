@@ -79,7 +79,7 @@ public class TestBukuDao extends TestCase {
         bukuPemrograman = bukuDao.findById(bukuPemrograman.getId());
         log.info("AFTER UPDATE NAMA PENGARANG : {}", bukuPemrograman);
 
-        assertSame("NAMA PENGARANG SAMA DENGAN JIJAN : ", bukuPemrograman.getNamaPengarang(),"elsa nabila");
+        assertSame("NAMA PENGARANG SAMA DENGAN ELSA NABILA : ", bukuPemrograman.getNamaPengarang(),"elsa nabila");
 
         session.getTransaction().commit();
 
