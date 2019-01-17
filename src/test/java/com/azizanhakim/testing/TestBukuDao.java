@@ -1,10 +1,10 @@
 package com.azizanhakim.testing;
 
-import com.azizanhakim.belajarhibernate.configuration.SessionFactoryUtil;
-import com.azizanhakim.belajarhibernate.dao.BukuDao;
-import com.azizanhakim.belajarhibernate.dao.KategoriBukuDao;
-import com.azizanhakim.belajarhibernate.entity.Buku;
-import com.azizanhakim.belajarhibernate.entity.KategoriBuku;
+import com.azizanhakim.belajarhibernate.hibernate.configuration.SessionFactoryUtil;
+import com.azizanhakim.belajarhibernate.hibernate.dao.BukuDao;
+import com.azizanhakim.belajarhibernate.hibernate.dao.KategoriBukuDao;
+import com.azizanhakim.belajarhibernate.hibernate.entity.Buku;
+import com.azizanhakim.belajarhibernate.hibernate.entity.KategoriBuku;
 import junit.framework.TestCase;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;
@@ -65,7 +65,7 @@ public class TestBukuDao extends TestCase {
         session.getTransaction().commit();
 
         assertNotNull(pemrograman.getId());
-        assertEquals("NAMA PENGARANG", pemrograman.getNamaPengarang(), "Azizan Hakim");
+        assertEquals("NAMA PENGARANG", pemrograman.getNamaPengarang(), "Ujah Elsa");
 
 
         List<Buku> daftarBuku = bukuDao.findAll();
